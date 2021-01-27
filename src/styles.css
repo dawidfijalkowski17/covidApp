@@ -1,0 +1,27 @@
+
+.display-4{
+    font-weight: 500;
+}
+
+.confirmed, 
+.deaths, 
+.recovered{
+
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 1.4em;
+
+}
+
+.value{
+    font-size: 1.4em;
+}
+
+.deaths-value{
+    color: red;
+}
+
+.recovered-value{
+    color: green;
+}
+

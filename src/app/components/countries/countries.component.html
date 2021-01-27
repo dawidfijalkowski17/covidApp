@@ -1,0 +1,41 @@
+<div class="headline text-center">
+    <h1 class="display-4 text-uppercase my-4">COVID-19 Kraje</h1>
+    
+    <div class="mx-auto">
+    <div class="form-group col-lg-5 mx-auto">
+        <label for="c" class="my-input">Select country</label>
+        <select name="" id="" class="form-control" id="c" #input (change)='updateValues(input.value)'>
+            <option value="{{con}}" *ngFor='let con of countries'>{{con}}</option>
+        </select>
+        
+    </div>
+    <div class="row my-4">
+        
+        <div class="col-sm">
+            <div class="confirmed">
+                Confirmed:
+            </div>
+            <div class="value">
+               {{totalConfirmed}}
+            </div>
+        </div>
+        <div class="col-sm">
+            <div class="deaths">
+                Deaths:
+            </div>
+            <div class="value deaths-value">
+               {{totalDeaths}}
+            </div>
+        </div>
+        <div class="col-sm">
+            <div class="recovered">
+                Recovered:
+            </div>
+
+            <div class="value recovered-value">
+              {{totalRecovered}}
+            </div>
+        </div> 
+    </div>
+</div>
+</div>
